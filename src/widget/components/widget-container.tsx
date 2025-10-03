@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { WidgetContext } from '../lib/context';
-import { Widget } from './widget';
+import ChatWidget from './widget';
 
 interface WidgetContainerProps {
   clientKey: string;
@@ -20,7 +20,7 @@ export function WidgetContainer({ clientKey }: WidgetContainerProps) {
 
   return (
     <WidgetContext.Provider value={{ isOpen, setIsOpen, clientKey }}>
-      <Widget />
+      <ChatWidget />
     </WidgetContext.Provider>
   );
 }

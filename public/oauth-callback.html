@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OAuth Callback</title>
+        <script>
+      window.onload = function () {
+        const hash = window.location.hash.substring(1);
+        const params = new URLSearchParams(hash);
+        const accessToken = params.get("access_token");
+        if (accessToken && window.opener) {
+          window.opener.postMessage({ type: "google_oauth_token", access_token: accessToken }, window.origin);
+          window.close();
+        }
+      };
+    </script>
+    </head>
+    <body>
+        Đang xác thực...
+    </body>
+</html>

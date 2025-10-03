@@ -27,9 +27,8 @@ const args = parseArgs({
 
 const env = args.values.environment;
 const production = env === 'production';
-let environmentVariablesPath = [ './.env.development' ];
+let environmentVariablesPath = ['./.env.development'];
 
-console.log(`Building widget for ${env} environment...`);
 
 if (production) {
   environmentVariablesPath = './.env.production';
@@ -39,7 +38,7 @@ const ENV_VARIABLES = config({
   path: environmentVariablesPath,
 }).parsed;
 
-const fileName = ENV_VARIABLES.WIDGET_NAME || 'widget.js';
+const fileName = ENV_VARIABLES.WIDGET_NAME || 'obacker-chat-v2.5.js';
 
 export default {
   input: './src/widget/index.tsx',

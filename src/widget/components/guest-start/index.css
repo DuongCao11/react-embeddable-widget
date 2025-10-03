@@ -1,0 +1,94 @@
+.guest-container {
+  width: 100%;
+  flex: 1;
+  background: #f9f9fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: auto;
+  padding: 0 0 24px 0;
+}
+
+.guest-form-start {
+  padding: 20px 20px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.guest-form-greeting {
+  font-size: 16px;
+  color: #222;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.guest-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guest-form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 6px;
+}
+
+.guest-label {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 2px;
+}
+
+.guest-input {
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.guest-input:focus {
+  border-color: #2563eb;
+  background: #fff;
+}
+
+.guest-submit-btn-guest {
+  width: 100%;
+  background: #193cb8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.guest-submit-btn-guest:hover {
+  background: #1a56db;
+}
+
+.guest-submit-arrow {
+  font-size: 18px;
+  margin-left: 4px;
+}
+.guest-submit-icon {
+  background-color: #fff;
+  height: 24px;
+  width: 24px;
+}

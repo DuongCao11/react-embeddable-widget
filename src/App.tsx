@@ -1,4 +1,3 @@
-import './App.css';
 import './widget/styles/style.css';
 
 import { WidgetContainer } from './widget/components/widget-container.tsx';
